@@ -2,7 +2,6 @@
 My personal notes during self-study of C++ for competitive programming
 
 ### Notes
-
     My rules for this repo operation and management.
 
     - Use DuckDuckGo whose settings for AI Features are all off.
@@ -14,4 +13,4 @@ My personal notes during self-study of C++ for competitive programming
 
     Those rules are OK and compatible with the latest AtCoder's "AtCoder生成AI対策ルール - 20261014版",
     since following above my rules means I never use Generative AI and someone's source codes at all
-    for competition.
+    for competition and (solving past competiton problems).
