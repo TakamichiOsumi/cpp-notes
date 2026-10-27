@@ -1,12 +1,13 @@
-#include <iostream> /* cout, endl */
+#include <iostream> /* cin, cout, endl */
 
 int
 main(void)
 {
 
-  std::cout << "Yes" << std::endl;
-  std::cout << "No" << std::endl;
+  int A, B;
+
+  std::cin >> A >> B;
+  std::cout << A + B << std::endl;
 
   return 0;
 }
-
