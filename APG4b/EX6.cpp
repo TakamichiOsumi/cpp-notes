@@ -5,7 +5,7 @@ main(void)
 {
 
   int A, B, pos1, pos2, pos3;
-  std::string s = "Hello World";
+  std::string s;
 
   std::cin >> A;
   std::cin >> s;
@@ -20,7 +20,6 @@ main(void)
   else if (s == "/"){
     if (B == 0){
       std::cout << "error" << std::endl;
-      return 0;
     }else{
       std::cout << A / B << std::endl;
     }
