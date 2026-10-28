@@ -1,0 +1,3 @@
+
+(keymap-global-set "C-h" 'delete-backward-char)
+(keymap-global-set "C-j" 'backward-word)
