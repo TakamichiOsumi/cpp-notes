@@ -1,13 +1,15 @@
 #include <iostream> /* cin, cout, endl */
 
+using namespace std;
+
 int
 main(void)
 {
 
   int A, B;
 
-  std::cin >> A >> B;
-  std::cout << A + B << std::endl;
+  cin >> A >> B;
+  cout << A + B << endl;
 
   return 0;
 }
