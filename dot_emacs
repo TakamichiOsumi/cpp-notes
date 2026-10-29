@@ -2,6 +2,7 @@
 (keymap-global-set "C-h" 'delete-backward-char)
 (keymap-global-set "C-j" 'backward-word)
 (keymap-global-set "C-z" 'undo)
+(keymap-global-set "C-q" 'list-buffers)
 
 (keymap-global-unset "C-l")
 (keymap-global-set "C-l C-l" 'copy-region-as-kill)
