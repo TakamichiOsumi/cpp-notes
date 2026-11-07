@@ -8,11 +8,10 @@
 
 using namespace std;
 
-int sum(vector<int> v, int N){
+int sum(vector<int> v){
   int res = v.at(0);
-  for (int i = 1; i < N; i++){
+  for (int i = 1; i < v.size(); i++)
     res += v.at(i);
-  }
   return res;
 }
 
@@ -30,7 +29,7 @@ main(void)
   for (int i = 0; i < N; i++)
     cin >> C.at(i);
 
-  cout << sum(A, N) * sum(B, N) * sum(C, N) << endl;
+  cout << sum(A) * sum(B) * sum(C) << endl;
 
   return 0;
 }
