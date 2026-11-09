@@ -15,6 +15,12 @@ void apply(vector<int> &vec){
     v = v * 2; /* Multiply by 2 in this sample case */
 }
 
+/* Return multiple values from a single function */
+void multiple_operations(int A, int B, int &res_X, int &res_Y){
+  res_X = A + B;
+  res_Y = A - B;
+}
+
 int
 main(void)
 {
@@ -29,6 +35,10 @@ main(void)
   apply(vec);
   for (int i = 0; i < A; i++)
     cout << vec.at(i) << endl;
+
+  int X, Y;
+  multiple_operations(A, B, X, Y);
+  cout << X << " " << Y << endl;
 
   return 0;
 
