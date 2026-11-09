@@ -18,5 +18,25 @@ main(void)
   cin >> A >> B;
   cout << A + B << endl;
 
+  /* Define an integer matrix with N rows, M columns */
+  int N, M;
+  cin >> N >> M;
+
+  vector<vector<int>> mat(N, vector<int>(M, 0));
+  for (int i = 0; i < N; i++){
+    for (int j = 0; j < M; j++){
+      /* From left to right and up to bottom */
+      cin >> mat.at(i).at(j);
+    }
+  }
+
+  /* Dump the matrix */
+  for (int i = 0; i < N; i++){
+    for (int j = 0; j < M; j++){
+      cout << mat.at(i).at(j);
+    }
+    cout << endl;
+  }
+
   return 0;
 }
