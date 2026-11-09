@@ -10,13 +10,16 @@
 using namespace std;
 
 /* Apply the same operation to a single vector and update the argument vector */
-void apply(vector<int> &vec){
+void
+apply(vector<int> &vec){
   for (int &v : vec)
     v = v * 2; /* Multiply by 2 in this sample case */
 }
 
 /* Return multiple values from a single function */
-void multiple_operations(int A, int B, int &res_X, int &res_Y){
+void
+multiple_operations(int A, int B,
+		    int &res_X, int &res_Y){
   res_X = A + B;
   res_Y = A - B;
 }
