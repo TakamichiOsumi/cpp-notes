@@ -11,7 +11,7 @@ using namespace std;
 
 /* Apply the same operation to a single vector and update the argument vector */
 void
-apply(vector<int> &vec){
+apply(vector<int> &vec){ /* Avoid the entire copy of the argument vector */
   for (int &v : vec)
     v = v * 2; /* Multiply by 2 in this sample case */
 }
