@@ -9,6 +9,12 @@
 
 using namespace std;
 
+/* Apply the same operation to a single vector and update the argument vector */
+void apply(vector<int> &vec){
+  for (int &v : vec)
+    v = v * 2; /* Multiply by 2 in this sample case */
+}
+
 int
 main(void)
 {
@@ -17,6 +23,14 @@ main(void)
 
   cin >> A >> B;
   cout << A + B << endl;
+
+  vector<int> vec(A, B);
+
+  apply(vec);
+  for (int i = 0; i < A; i++)
+    cout << vec.at(i) << endl;
+
+  return 0;
 
   /* Define an integer matrix with N rows, M columns */
   int N, M;
