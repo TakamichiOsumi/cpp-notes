@@ -6,3 +6,5 @@
 
 (keymap-global-unset "C-l")
 (keymap-global-set "C-l C-l" 'copy-region-as-kill)
+(keymap-global-set "C-l C-h" 'highlight-symbol-at-point)
+(keymap-global-set "C-l C-k" 'kill-region)
