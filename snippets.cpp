@@ -6,6 +6,7 @@
 /* Include for 'std::greater<int>()' to pass the sort's 3rd argument.
    Note 'std::greater<int>()' can be replaced with the below lambda expression
    '[](int v1, int v2){ return v1 > v2; }'. */
+#include <cstdio> /* printf() */
 
 using namespace std;
 
