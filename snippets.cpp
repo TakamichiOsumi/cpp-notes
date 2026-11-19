@@ -10,6 +10,9 @@
 
 using namespace std;
 
+bool debug = true;
+#define c(d) do { if (debug) cout << "debug : data = " << d << endl; } while(false)
+
 int main(void){
 
   int A, B;
