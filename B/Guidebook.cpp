@@ -30,23 +30,19 @@ int main(void){
     ranks.at(i).first = original.at(i).first;
     ranks.at(i).second = original.at(i).second;
   }
-  
+
   sort(ranks.begin(), ranks.end(), [](pair<string, int> v1,
 				      pair<string, int> v2){
     if (v1.first == v2.first){
+      /* If 'first's point to the same city,
+	 then compare the scores. */
       return v1.second > v2.second;
     }else{
+      /* Otherwise, compare the city names. */
       return v1.first < v2.first;
     }
   });
-  /*
-  for (pair<string, int> p : original){
-    cout << "original : " << p.first << "," << p.second << endl;
-  }
-  for (pair<string, int> p : ranks){
-    cout << "sorted : " << p.first << "," << p.second << endl;
-  }
-  */
+
   for (pair<string, int> p : ranks){
     for (int i = 0; i < original.size(); i++){
       if (p.first == original.at(i).first and
