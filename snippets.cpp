@@ -12,6 +12,8 @@ using namespace std;
 
 bool debug = true;
 #define c(d) do { if (debug) cout << "debug : data = " << d << endl; } while(false)
+#define cv(d) do { if (debug) for (int i = 0; i < d.size(); i++) cout << "debug : data = " << d.at(i) << endl; } while(false)
+
 
 int main(void){
 
