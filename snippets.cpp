@@ -11,9 +11,8 @@
 #include <set> /* for 'set' and 'multiset' */
 #include <deque>
 /* deque<string> d;
-   d.push_front("foo"); d.push_back("bar");
-   d.pop_front(); d.pop_back();
-   d.insert(1, "bazz"); */
+   d.push_front("foo"); d.push_back("bar"); d.pop_front(); d.pop_back();
+   auto i = d.begin(); advance(i, 1); d.insert(i, "bazz"); */
 #include <queue>
 
 using namespace std;
@@ -32,8 +31,8 @@ int main(void){
   for (int i = 0; i < A; i++)
     cin >> vec.at(i);
 
-  /* Define an integer matrix with N rows, M columns */
-  /* Iterate from left to right and up to bottom */
+  /* Define an integer matrix with N rows and M columns.
+     Iterate from left to right and up to bottom */
   int N, M;
   cin >> N >> M;
 
