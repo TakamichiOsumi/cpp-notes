@@ -13,6 +13,7 @@
 #include <deque>
 /* deque<string> d;
    d.push_front("foo"); d.push_back("bar"); d.pop_front(); d.pop_back();
+   d.erase(d.end() - 1); d.erase(d.begin(), d.end());
    auto i = d.begin(); advance(i, 1); d.insert(i, "bazz"); */
 #include <queue>
 
