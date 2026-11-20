@@ -1,4 +1,6 @@
 
+(setq make-backup-files nil)
+
 (keymap-global-set "C-h" 'delete-backward-char)
 (keymap-global-set "C-j" 'backward-word)
 (keymap-global-set "C-z" 'undo)
