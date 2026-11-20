@@ -36,9 +36,28 @@ void basic_operations(void){
   assert(Y == -5);
 }
 
+void search_specific_item_from_matrix(void){
+  int N = 5;
+  vector<vector<int>> v(N, vector<int>(2));
+
+  v = { {0, 1}, {2, 3}, {4, 5}, {6, 7}, {8, 9} };
+
+  auto i = find_if(v.begin(), v.end(),
+		   /* Search for the 3 located at [1] in each vector */
+		   [](vector<int> v_internal){ return v_internal[1] == 3; });
+  if (i == v.end()){
+    cout << "not found" << endl;
+  }else{
+    cout << "found" << endl;
+    /* Calculate the index of the found item */
+    assert(distance(v.begin(), i) == 1);
+  }
+}
+
 int main(void){
 
   basic_operations();
+  search_specific_item_from_matrix();
 
   return 0;
 }
