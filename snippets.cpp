@@ -7,6 +7,14 @@
    Note 'std::greater<int>()' can be replaced with the below lambda expression
    '[](int v1, int v2){ return v1 > v2; }'. */
 #include <cstdio> /* printf() */
+#include <map>
+#include <set> /* for 'set' and 'multiset' */
+#include <deque>
+/* deque<string> d;
+   d.push_front("foo"); d.push_back("bar");
+   d.pop_front(); d.pop_back();
+   d.insert(1, "bazz"); */
+#include <queue>
 
 using namespace std;
 
