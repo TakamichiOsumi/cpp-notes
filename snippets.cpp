@@ -8,8 +8,9 @@
    '[](int v1, int v2){ return v1 > v2; }'. */
 #include <cstdio> /* printf() */
 #include <iterator>
-#include <map>
+#include <map> /* 'map' and 'set' has lower_bound and upper_bound member functions. */
 #include <set> /* for 'set' and 'multiset' */
+
 #include <deque>
 /* deque<string> d;
    d.push_front("foo"); d.push_back("bar"); d.pop_front(); d.pop_back();
@@ -47,3 +48,4 @@ int main(void){
 
   return 0;
 }
+
