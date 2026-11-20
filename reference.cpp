@@ -65,7 +65,7 @@ void lower_or_upper_bound(void){
 	{13, 14, 15},
   };
   vector<int> boundary = { 0, 6, 0 };
-  /* Find the first element in the range that is not ordered before 'boundary'. */
+  /* Find the first element in the range that is not ordered before 'boundary' */
   auto found_boundary = lower_bound(v.begin(), v.end(), boundary,
 				    [](vector<int> v1,
 				       vector<int> v2){
@@ -73,6 +73,16 @@ void lower_or_upper_bound(void){
   assert(found_boundary != v.end());
   for (int i = 0; i < (*found_boundary).size(); i++){
     cout << (*found_boundary)[i] << endl;
+  }
+  /* Dump until the found vector */
+  for (auto a = v.begin(); a != found_boundary; a++){
+    for (int i = 0; i < (*found_boundary).size(); i++){
+      cout << (*a)[i];
+      if (i != (*found_boundary).size() - 1)
+	cout << " ";
+      else
+	cout << endl;
+    }
   }
 }
 
