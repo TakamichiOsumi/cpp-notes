@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <functional>
 #include <cassert>
+#include <iterator>
 
 using namespace std;
 
@@ -54,10 +55,34 @@ void search_specific_item_from_matrix(void){
   }
 }
 
+void lower_or_upper_bound(void){
+  /* Provide a sample custom comparator */
+  vector<vector<int>> v(5, vector<int>(3, 0));
+  v = { {1, 2, 3},
+	{4, 5, 6},
+	{7, 8, 9},
+	{10, 11, 12},
+	{13, 14, 15},
+  };
+  vector<int> boundary = { 0, 6, 0 };
+  /* Find the first element in the range that is not ordered before 'boundary'. */
+  auto found_boundary = lower_bound(v.begin(), v.end(), boundary,
+				    [](vector<int> v1,
+				       vector<int> v2){
+				      return v1[1] < v2[1]; });
+  assert(found_boundary != v.end());
+  for (int i = 0; i < (*found_boundary).size(); i++){
+    cout << (*found_boundary)[i] << endl;
+  }
+}
+
+void sample_priority_queue(void){}
+
 int main(void){
 
   basic_operations();
   search_specific_item_from_matrix();
+  lower_or_upper_bound();
 
   return 0;
 }
